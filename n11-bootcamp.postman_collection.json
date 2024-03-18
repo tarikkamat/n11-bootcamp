@@ -1,0 +1,1041 @@
+{
+	"info": {
+		"_postman_id": "b6eb0c84-ff3f-4ee7-bd94-040ec6171f61",
+		"name": "n11-bootcamp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33086457"
+	},
+	"item": [
+		{
+			"name": "restaurant-service",
+			"item": [
+				{
+					"name": "addRestaurant",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Restorant 3\",\n    \"latitude\": 41.237,\n    \"longitude\": 42.321\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/v1/restaurants",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"v1",
+								"restaurants"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "addRestaurant",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"Restorant 3\",\n    \"latitude\": 41.237,\n    \"longitude\": 42.321\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/restaurants",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"restaurants"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "date",
+									"value": "Mon, 18 Mar 2024 16:02:51 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"5718e822-2b71-4ecf-b16f-b3bbbb98b231\",\n    \"name\": \"Restorant 3\",\n    \"latitude\": 41.237,\n    \"longitude\": 42.321\n}"
+						}
+					]
+				},
+				{
+					"name": "getAllRestaurants",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Restorant 3\",\n    \"latitude\": 41.237,\n    \"longitude\": 42.321\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/v1/restaurants",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"v1",
+								"restaurants"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getAllRestaurants",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"Restorant 3\",\n    \"latitude\": 41.237,\n    \"longitude\": 42.321\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/restaurants",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"restaurants"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "date",
+									"value": "Mon, 18 Mar 2024 16:02:40 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"09bb05cb-64a0-4b45-b33b-c71899f183d5\",\n        \"name\": \"Restorant 3\",\n        \"latitude\": 41.237,\n        \"longitude\": 42.321\n    },\n    {\n        \"id\": \"27f3fea8-4dc6-4cf9-954c-37c795762ae7\",\n        \"name\": \"Restorant 3\",\n        \"latitude\": 41.237,\n        \"longitude\": 42.321\n    },\n    {\n        \"id\": \"409ecadc-7959-46a7-b636-1d1e93920525\",\n        \"name\": \"Restorant 3\",\n        \"latitude\": 41.237,\n        \"longitude\": 42.321\n    },\n    {\n        \"id\": \"583fa8f8-f48c-49e9-af73-d3d46752c655\",\n        \"name\": \"Köfteci Yusuf\",\n        \"latitude\": 21.237,\n        \"longitude\": 32.321\n    },\n    {\n        \"id\": \"61adb9e4-fd4a-4857-99bb-c5dd9b91d9f2\",\n        \"name\": \"Restorant 1\",\n        \"latitude\": 41.237,\n        \"longitude\": 42.321\n    },\n    {\n        \"id\": \"6fa8aa90-3224-4e8e-ae83-31412a3f0670\",\n        \"name\": \"Restorant 1\",\n        \"latitude\": 41.237,\n        \"longitude\": 42.321\n    },\n    {\n        \"id\": \"9ece5ef6-b792-4637-8828-9af24ed8cd30\",\n        \"name\": \"Restorant 3\",\n        \"latitude\": 41.237,\n        \"longitude\": 42.321\n    },\n    {\n        \"id\": \"ada74fbf-1eef-462e-a30d-77264c245c1f\",\n        \"name\": \"Restorant 2\",\n        \"latitude\": 41.237,\n        \"longitude\": 42.321\n    },\n    {\n        \"id\": \"c30c5cbb-572f-4617-aac3-7ac4f21040a3\",\n        \"name\": \"Restorant 3\",\n        \"latitude\": 41.237,\n        \"longitude\": 42.321\n    },\n    {\n        \"id\": \"f895ee96-6119-41aa-a999-baff06218955\",\n        \"name\": \"Restorant 3\",\n        \"latitude\": 41.237,\n        \"longitude\": 42.321\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "getRestaurantById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/v1/restaurants/ada74fbf-1eef-462e-a30d-77264c245c1f",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"v1",
+								"restaurants",
+								"ada74fbf-1eef-462e-a30d-77264c245c1f"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getRestaurantById",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/restaurants/ada74fbf-1eef-462e-a30d-77264c245c1f",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"restaurants",
+										"ada74fbf-1eef-462e-a30d-77264c245c1f"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "date",
+									"value": "Mon, 18 Mar 2024 16:02:59 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"ada74fbf-1eef-462e-a30d-77264c245c1f\",\n    \"name\": \"Restorant 2\",\n    \"latitude\": 41.237,\n    \"longitude\": 42.321\n}"
+						}
+					]
+				},
+				{
+					"name": "updateRestaurantById",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"f895ee96-6119-41aa-a999-baff06218955\",\n    \"name\": \"İkinci Restorant\",\n    \"latitude\": 15.237,\n    \"longitude\": 16.321\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/v1/restaurants/f895ee96-6119-41aa-a999-baff06218955",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"v1",
+								"restaurants",
+								"f895ee96-6119-41aa-a999-baff06218955"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "updateRestaurantById",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"583fa8f8-f48c-49e9-af73-d3d46752c655\",\n    \"name\": \"Maltepe Restorant\",\n    \"latitude\": 21.237,\n    \"longitude\": 32.321\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/restaurants/583fa8f8-f48c-49e9-af73-d3d46752c655",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"restaurants",
+										"583fa8f8-f48c-49e9-af73-d3d46752c655"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "date",
+									"value": "Mon, 18 Mar 2024 16:03:05 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"583fa8f8-f48c-49e9-af73-d3d46752c655\",\n    \"name\": \"Maltepe Restorant\",\n    \"latitude\": 21.237,\n    \"longitude\": 32.321\n}"
+						}
+					]
+				},
+				{
+					"name": "updateRestaurantNameById",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"583fa8f8-f48c-49e9-af73-d3d46752c655\",\n    \"name\": \"Köfteci Yusuf\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/v1/restaurants/583fa8f8-f48c-49e9-af73-d3d46752c655/name",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"v1",
+								"restaurants",
+								"583fa8f8-f48c-49e9-af73-d3d46752c655",
+								"name"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "updateRestaurantNameById",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"583fa8f8-f48c-49e9-af73-d3d46752c655\",\n    \"name\": \"Köfteci Yusuf\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/restaurants/583fa8f8-f48c-49e9-af73-d3d46752c655/name",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"restaurants",
+										"583fa8f8-f48c-49e9-af73-d3d46752c655",
+										"name"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "date",
+									"value": "Mon, 18 Mar 2024 16:03:14 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"583fa8f8-f48c-49e9-af73-d3d46752c655\",\n    \"name\": \"Köfteci Yusuf\",\n    \"latitude\": 21.237,\n    \"longitude\": 32.321\n}"
+						}
+					]
+				},
+				{
+					"name": "updateRestaurantLocationById",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"583fa8f8-f48c-49e9-af73-d3d46752c655\",\n    \"latitude\": 15.237,\n    \"longitude\": 16.321\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/v1/restaurants/583fa8f8-f48c-49e9-af73-d3d46752c655/location",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"v1",
+								"restaurants",
+								"583fa8f8-f48c-49e9-af73-d3d46752c655",
+								"location"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "updateRestaurantLocationById",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"583fa8f8-f48c-49e9-af73-d3d46752c655\",\n    \"latitude\": 15.237,\n    \"longitude\": 16.321\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/restaurants/583fa8f8-f48c-49e9-af73-d3d46752c655/location",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"restaurants",
+										"583fa8f8-f48c-49e9-af73-d3d46752c655",
+										"location"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "date",
+									"value": "Mon, 18 Mar 2024 16:03:21 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"583fa8f8-f48c-49e9-af73-d3d46752c655\",\n    \"name\": \"Köfteci Yusuf\",\n    \"latitude\": 15.237,\n    \"longitude\": 16.321\n}"
+						}
+					]
+				},
+				{
+					"name": "deleteRestaurantById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Restorant 3\",\n    \"latitude\": 41.237,\n    \"longitude\": 42.321\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/v1/restaurants/1cf4b239-65af-43f8-9cf1-9238ccf29d54",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"v1",
+								"restaurants",
+								"1cf4b239-65af-43f8-9cf1-9238ccf29d54"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user-service",
+			"item": [
+				{
+					"name": "addUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Tarık KAMAT\",\n    \"username\": \"tarikkamat2\",\n    \"latitude\": 41.237,\n    \"longitude\": 42.321\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/v1/users",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"v1",
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "addRestaurant",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"Tarık KAMAT\",\n    \"username\": \"tarikkamat\",\n    \"latitude\": 41.237,\n    \"longitude\": 42.321\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/users",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "date",
+									"value": "Mon, 18 Mar 2024 15:34:28 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"e1cf6142-932a-4154-95f2-0f5c23907191\",\n    \"username\": \"tarikkamat\",\n    \"name\": \"Tarık KAMAT\",\n    \"latitude\": 41.237,\n    \"longitude\": 42.321\n}"
+						}
+					]
+				},
+				{
+					"name": "getAllUsers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/v1/users",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"v1",
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getAllUsers",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/users",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "date",
+									"value": "Mon, 18 Mar 2024 15:35:01 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"e1cf6142-932a-4154-95f2-0f5c23907191\",\n        \"username\": \"tarikkamat\",\n        \"name\": \"Tarık KAMAT\",\n        \"latitude\": 41.237,\n        \"longitude\": 42.321\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "getUserById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/v1/users/f03d8a2f-cad1-44b7-9ba5-aa9ec7ac81bb",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"v1",
+								"users",
+								"f03d8a2f-cad1-44b7-9ba5-aa9ec7ac81bb"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getUserById",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/users/e1cf6142-932a-4154-95f2-0f5c23907191",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"users",
+										"e1cf6142-932a-4154-95f2-0f5c23907191"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "date",
+									"value": "Mon, 18 Mar 2024 15:37:09 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"e1cf6142-932a-4154-95f2-0f5c23907191\",\n    \"username\": \"tarikkamat\",\n    \"name\": \"Tarık KAMAT\",\n    \"latitude\": 41.237,\n    \"longitude\": 42.321\n}"
+						}
+					]
+				},
+				{
+					"name": "findByRestaurantLocationWithUserId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/v1/restaurants/findByRestaurantLocationWithUserId?userId=f03d8a2f-cad1-44b7-9ba5-aa9ec7ac81bb",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"v1",
+								"restaurants",
+								"findByRestaurantLocationWithUserId"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "f03d8a2f-cad1-44b7-9ba5-aa9ec7ac81bb"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getUserById",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/users/e1cf6142-932a-4154-95f2-0f5c23907191",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"users",
+										"e1cf6142-932a-4154-95f2-0f5c23907191"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "date",
+									"value": "Mon, 18 Mar 2024 15:37:09 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"e1cf6142-932a-4154-95f2-0f5c23907191\",\n    \"username\": \"tarikkamat\",\n    \"name\": \"Tarık KAMAT\",\n    \"latitude\": 41.237,\n    \"longitude\": 42.321\n}"
+						}
+					]
+				},
+				{
+					"name": "updateUserById",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"e1cf6142-932a-4154-95f2-0f5c23907191\",\n    \"name\": \"A. Tarık KAMAT\",\n    \"username\": \"tarikkamat2\",\n    \"latitude\": 21.237,\n    \"longitude\": 32.321\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/v1/users/e1cf6142-932a-4154-95f2-0f5c23907191",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"v1",
+								"users",
+								"e1cf6142-932a-4154-95f2-0f5c23907191"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "updateUserById",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"e1cf6142-932a-4154-95f2-0f5c23907191\",\n    \"name\": \"A. Tarık KAMAT\",\n    \"username\": \"tarikkamat2\",\n    \"latitude\": 21.237,\n    \"longitude\": 32.321\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/users/e1cf6142-932a-4154-95f2-0f5c23907191",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"users",
+										"e1cf6142-932a-4154-95f2-0f5c23907191"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "date",
+									"value": "Mon, 18 Mar 2024 15:38:10 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"e1cf6142-932a-4154-95f2-0f5c23907191\",\n    \"username\": \"tarikkamat2\",\n    \"name\": \"A. Tarık KAMAT\",\n    \"latitude\": 21.237,\n    \"longitude\": 32.321\n}"
+						}
+					]
+				},
+				{
+					"name": "updateUserLocationById",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"f03d8a2f-cad1-44b7-9ba5-aa9ec7ac81bb\",\n    \"latitude\": 15.237,\n    \"longitude\": 16.321\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/v1/users/f03d8a2f-cad1-44b7-9ba5-aa9ec7ac81bb/location",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"v1",
+								"users",
+								"f03d8a2f-cad1-44b7-9ba5-aa9ec7ac81bb",
+								"location"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteUserById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Restorant 3\",\n    \"latitude\": 41.237,\n    \"longitude\": 42.321\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/v1/users/e1cf6142-932a-4154-95f2-0f5c23907191",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"v1",
+								"users",
+								"e1cf6142-932a-4154-95f2-0f5c23907191"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost/api"
+		}
+	]
+}
