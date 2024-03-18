@@ -1,6 +1,6 @@
-package com.tarikkamat.restaurantservice.contract.impl;
+package com.tarikkamat.restaurantservice.controller.contract.impl;
 
-import com.tarikkamat.restaurantservice.contract.RestaurantControllerContract;
+import com.tarikkamat.restaurantservice.controller.contract.RestaurantControllerContract;
 import com.tarikkamat.restaurantservice.dto.RestaurantDTO;
 import com.tarikkamat.restaurantservice.entity.Restaurant;
 import com.tarikkamat.restaurantservice.mapper.RestaurantMapper;

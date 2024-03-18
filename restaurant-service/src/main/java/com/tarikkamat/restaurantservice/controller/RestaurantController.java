@@ -1,6 +1,6 @@
 package com.tarikkamat.restaurantservice.controller;
 
-import com.tarikkamat.restaurantservice.contract.RestaurantControllerContract;
+import com.tarikkamat.restaurantservice.controller.contract.RestaurantControllerContract;
 import com.tarikkamat.restaurantservice.dto.RestaurantDTO;
 import com.tarikkamat.restaurantservice.request.RestaurantSaveRequest;
 import com.tarikkamat.restaurantservice.request.RestaurantUpdateRequest;
