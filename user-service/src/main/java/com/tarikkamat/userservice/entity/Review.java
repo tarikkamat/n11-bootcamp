@@ -31,6 +31,6 @@ public class Review extends BaseEntity {
     private String comment;
 
     @Column(name = "RATING")
-    private Integer rating;
+    private Double rating;
 
 }

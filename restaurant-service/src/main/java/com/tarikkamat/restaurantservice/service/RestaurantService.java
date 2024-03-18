@@ -3,6 +3,7 @@ package com.tarikkamat.restaurantservice.service;
 import com.tarikkamat.restaurantservice.dao.RestaurantRepository;
 import com.tarikkamat.restaurantservice.entity.Restaurant;
 import com.tarikkamat.restaurantservice.general.BaseEntityService;
+import com.tarikkamat.restaurantservice.response.ReviewResponse;
 import com.tarikkamat.restaurantservice.response.UserResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -33,11 +34,18 @@ public class RestaurantService extends BaseEntityService<Restaurant, RestaurantR
                 });
     }
 
-    public Mono<UserResponse> findUserLocationByUserId(String id) {
+    private Mono<UserResponse> findUserLocationByUserId(String id) {
         return this.webClient.get()
                 .uri("/users/{id}", id)
                 .retrieve()
                 .bodyToMono(UserResponse.class);
+    }
+
+    private Mono<ReviewResponse> findReviewsByRestaurantId(String id) {
+        return this.webClient.get()
+                .uri("/reviews/restaurant/{id}", id)
+                .retrieve()
+                .bodyToMono(ReviewResponse.class);
     }
 
 }

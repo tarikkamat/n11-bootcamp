@@ -5,6 +5,6 @@ import java.util.UUID;
 public record ReviewUpdateRequest(
         UUID id,
         String comment,
-        Integer rating
+        Double rating
 ) {
 }

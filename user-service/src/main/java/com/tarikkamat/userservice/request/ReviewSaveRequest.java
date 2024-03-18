@@ -4,6 +4,6 @@ public record ReviewSaveRequest(
         String userId,
         String restaurantId,
         String comment,
-        Integer rating
+        Double rating
 ) {
 }

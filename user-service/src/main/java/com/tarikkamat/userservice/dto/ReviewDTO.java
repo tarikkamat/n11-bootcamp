@@ -7,6 +7,6 @@ public record ReviewDTO(
         String userId,
         String restaurantId,
         String comment,
-        Integer rating
+        Double rating
 ) {
 }
