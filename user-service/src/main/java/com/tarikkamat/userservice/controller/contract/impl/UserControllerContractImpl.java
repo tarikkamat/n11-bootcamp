@@ -55,8 +55,6 @@ public class UserControllerContractImpl implements UserControllerContract {
     @Override
     public UserDTO updateUserLocationById(UserUpdateRequest request) {
         User user = userService.findById(request.id());
-        user.setName(user.getName());
-        user.setUsername(user.getUsername());
         user.setLatitude(request.latitude());
         user.setLongitude(request.longitude());
         user = userService.save(user);

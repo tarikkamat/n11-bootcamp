@@ -10,6 +10,7 @@ import com.tarikkamat.restaurantservice.service.RestaurantService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+import reactor.core.publisher.Flux;
 
 import java.util.List;
 import java.util.UUID;
@@ -68,6 +69,12 @@ public class RestaurantControllerContractImpl implements RestaurantControllerCon
         restaurant.setLongitude(request.longitude());
         restaurant = restaurantService.save(restaurant);
         return RestaurantMapper.INSTANCE.convertToRestaurantDTO(restaurant);
+    }
+
+    @Override
+    public Flux<RestaurantDTO> findByRestaurantLocationWithUserId(String userId) {
+        return restaurantService.findByRestaurantLocationWithUserId(userId)
+                .map(RestaurantMapper.INSTANCE::convertToRestaurantDTO);
     }
 
 }

@@ -6,6 +6,7 @@ import com.tarikkamat.restaurantservice.request.RestaurantSaveRequest;
 import com.tarikkamat.restaurantservice.request.RestaurantUpdateRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import reactor.core.publisher.Flux;
 
 import java.util.List;
 import java.util.UUID;
@@ -61,5 +62,12 @@ public class RestaurantController {
         RestaurantDTO restaurantDTO = restaurantControllerContract.updateRestaurantLocationById(request);
         return restaurantDTO;
     }
+
+    @GetMapping("/findByRestaurantLocationWithUserId")
+    public Flux<RestaurantDTO> findByRestaurantLocationWithUserId(@RequestParam String userId) {
+        Flux<RestaurantDTO> restaurantDTOs = restaurantControllerContract.findByRestaurantLocationWithUserId(userId);
+        return restaurantDTOs;
+    }
+
 
 }
